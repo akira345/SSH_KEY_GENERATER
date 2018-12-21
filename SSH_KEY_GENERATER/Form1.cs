@@ -17,7 +17,7 @@ namespace SSH_KEY_GENERATER
     public partial class Form1 : Form
     {
         private string save_base_path;
-        const int KEY_SIZE = 2048; //RSAキーサイズ
+        const int KEY_SIZE = 4096; //RSAキーサイズ
 
         public Form1()
         {
@@ -96,7 +96,7 @@ namespace SSH_KEY_GENERATER
                 //フォーム全体を無効化
                 this.Enabled = false;
 
-                //2048bitで非対称キー作成
+                //指定したビット数で非対称キー作成
                 //http://kagasu.hatenablog.com/entry/2017/02/02/132741より
                 var rsa = new RSACryptoServiceProvider(KEY_SIZE);
                 var parameter = rsa.ExportParameters(true);
