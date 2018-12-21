@@ -35,6 +35,13 @@ namespace SSH_KEY_GENERATER
             //カレントディレクトリを初期値にする。
             string save_base_path = Environment.CurrentDirectory;
 
+            //自分自身のAssemblyを取得
+            System.Reflection.Assembly asm =
+            System.Reflection.Assembly.GetExecutingAssembly();
+            //バージョンの取得
+            System.Version ver = asm.GetName().Version;
+            this.Text = "SSHキージェネレータ　" + "Ver " + ver;
+
         }
 
         private void Btn_Generate_Click(object sender, EventArgs e)
