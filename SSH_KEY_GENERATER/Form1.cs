@@ -27,7 +27,7 @@ namespace SSH_KEY_GENERATER
             Txt_UserName.ImeMode = ImeMode.Disable;
 
             //カレントディレクトリを初期値にする。
-            string save_base_path = Environment.CurrentDirectory;
+             save_base_path = Environment.CurrentDirectory;
 
             //自分自身のAssemblyを取得
             System.Reflection.Assembly asm =
@@ -153,6 +153,7 @@ namespace SSH_KEY_GENERATER
             }
             finally
             {
+                fbd.Dispose();
                 this.Enabled = true;
             }
 
