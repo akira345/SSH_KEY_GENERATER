@@ -18,4 +18,3 @@ deploy:
 - provider: GitHub
   tag: SSH_KEY_GENERATER-v$(appveyor_build_version)
   release: SSH_KEY_GENERATER-v$(appveyor_build_version)
-  auth_token: $(github_access)
