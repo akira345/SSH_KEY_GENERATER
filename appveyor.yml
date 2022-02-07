@@ -12,7 +12,7 @@ build:
   project: SSH_KEY_GENERATER.sln
   verbosity: minimal
 artifacts:
-- path: SSH_KEY_GENERATER\x64\bin\Release
+- path: SSH_KEY_GENERATER\bin\x64\Release
   name: ssh_key_generater_stable
 deploy:
 - provider: GitHub
