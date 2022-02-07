@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。
@@ -10,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("SSH_KEY_GENERATER")]
-[assembly: AssemblyCopyright("Copyright ©  2020 Akira345")]
+[assembly: AssemblyCopyright("Copyright ©  2022 Akira345")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

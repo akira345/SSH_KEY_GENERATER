@@ -1,8 +1,8 @@
-﻿using System.IO;
+﻿using Org.BouncyCastle.Crypto.Parameters;
+using Org.BouncyCastle.Math;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using Org.BouncyCastle.Crypto.Parameters;
-using Org.BouncyCastle.Math;
 //http://kagasu.hatenablog.com/entry/2017/02/02/132741より
 namespace SSH_KEY_GENERATER
 {
@@ -46,11 +46,11 @@ namespace SSH_KEY_GENERATER
                     var pemWriter = new Org.BouncyCastle.OpenSsl.PemWriter(writer);
                     pemWriter.WriteObject(key);
                 }
-                
+
                 return new UTF8Encoding().GetString(stream.ToArray()).Replace("\r\n", "\n");
             }
         }
-        
+
 
     }
 }
